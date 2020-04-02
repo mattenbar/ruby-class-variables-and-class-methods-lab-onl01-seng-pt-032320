@@ -10,10 +10,6 @@ class Song
     @@song_count += 1
   end
 
-  def name
-    @name = name
-  end
-
   def self.count
     @@song_count
   end
