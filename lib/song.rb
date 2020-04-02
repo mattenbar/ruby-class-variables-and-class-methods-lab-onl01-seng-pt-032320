@@ -20,11 +20,7 @@ class Song
   end
 
   def self.generes
-    if @@genres.include? (genre)
-    else
-      @@genres << genre
-    end
-    @@genres
+    @@genres.uniq
   end
 
   def self.artists
