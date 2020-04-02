@@ -30,7 +30,7 @@ class Song
 
   def self.genre_count
     self.genres
-    @@genres_count = Hash[@@genre_array.map {|x| [x, @@genres]}]
+    @@genres_count = Hash[@@genre_array.map {|x| [x, @@genres.uniq.count]}]
   end
 
 
