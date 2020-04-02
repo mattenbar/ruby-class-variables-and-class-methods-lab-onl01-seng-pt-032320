@@ -30,7 +30,7 @@ class Song
 
   def self.genre_count
     genres_array = genres
-    @@genre_count.each do |genre|
+    @@genre_count.each do 
       genre_count[genres_array]
     end
     end
