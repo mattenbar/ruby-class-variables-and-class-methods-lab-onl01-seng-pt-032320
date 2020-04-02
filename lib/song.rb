@@ -24,7 +24,7 @@ class Song
     else
       @@genres << genre
     end
-    @@generes
+    @@genres
   end
 
   def self.artists
