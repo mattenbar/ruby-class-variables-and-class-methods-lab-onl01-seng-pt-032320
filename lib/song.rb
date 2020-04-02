@@ -21,16 +21,16 @@ class Song
   end
 
   def self.genres
-    genre_array = @@genres.uniq
+    @@genre_array = @@genres.uniq
   end
 
   def self.artists
-    artists_array = @@artists.uniq
+    @@artists_array = @@artists.uniq
   end
 
   def self.genre_count
     self.genres
-    @@genres_count = Hash[genre_array.map {|x| [x, @@genres.count]}]
+    @@genres_count = Hash[@@genre_array.map {|x| [x, @@genres.count]}]
   end
 
 
