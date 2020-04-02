@@ -24,7 +24,7 @@ class Song
   end
 
   def self.artists
-    @@artists.include? (artist)
+    if @@artists.include? (artist)
     else
       @@artists << artist
     end
