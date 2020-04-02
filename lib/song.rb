@@ -30,6 +30,7 @@ class Song
     else
       @@artists << artist
     end
+    @@artists
   end
 
 
