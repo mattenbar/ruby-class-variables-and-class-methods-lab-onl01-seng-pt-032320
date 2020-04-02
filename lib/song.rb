@@ -28,11 +28,7 @@ class Song
   end
 
   def self.artists
-    if @@artists.include? (artist)
-    else
-      @@artists << artist
-    end
-    @@artists
+    @@artists.uniq
   end
 
 
