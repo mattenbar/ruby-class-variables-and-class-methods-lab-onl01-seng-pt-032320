@@ -33,7 +33,7 @@ class Song
     @@genre_count.each do
       genre_count[genres_array]
       end
-    end
+  end
 
   end
 
