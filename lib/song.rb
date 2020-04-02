@@ -28,11 +28,16 @@ class Song
     @@artists_array = @@artists.uniq
   end
 
+
   def self.genre_count
+    #creat empty hash
     genre_count = {}
+    #takes the @@genres array that has duplicates and goes through each one
     @@genres.each do |genre|
+      #if the key for that genre exists already increment the genre_count by 1
       if genre_count[genre]
         genre_count[genre] += 1
+      #if the key does not exist creates the key and sets the count to 1
       else
         genre_count[genre] = 1
       end
