@@ -28,6 +28,7 @@ class Song
     else
       @@artists << artist
     end
+  end
 
 
 
